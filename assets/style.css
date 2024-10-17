@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+/* #region common */
+:root {
+    --accent-colour: #00D9C0;
+    --font-colour: #695958;
+    --container-colour: #F3D9DC;
+    --background-colour: #ECEBE4;
+}
+
+body {
+    background-color: var(--background-colour);
+    color: var(--font-colour);
+}
+/* #endregion common */
+
 /* #region header */
 header {
 
@@ -24,7 +38,7 @@ main {
         justify-content: center;
         align-items: center;
         margin: auto;
-        background-color: aquamarine;
+        background-color: var(--container-colour);
         min-height: 300px;
         width: 80%;
         padding: 1rem;
