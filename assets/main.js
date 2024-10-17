@@ -10,7 +10,7 @@ console.log('im alive');
 let ulElement = document.querySelector('ul');
 
 // RICORDA: l'API logga un singolo indirizzo. Fai un loop * 10?
-for (let i = 0; i <= 10; i++) {
+for (let i = 0; i < 10; i++) {
     axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
     .then (response => {
         console.log(response.data);
