@@ -26,7 +26,10 @@ for (let i = 0; i < 10; i++) {
 // per sezione bonus: appendi il for ad un bottone con add event listener?
 buttonElement.addEventListener('click', function() {
     
-    
+    // risvuotalo ad ogni click
+    // muovere la costante fuori rende una sola mail
+    ulElement.innerHTML = '';
+
     for (let i = 0; i < 10; i++) {
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
         .then (response => {
