@@ -14,8 +14,10 @@
 
 body {
     background-color: var(--background-colour);
+    font-family: "Roboto Mono", monospace;
     color: var(--font-colour);
 }
+
 /* #endregion common */
 
 /* #region header */
@@ -32,7 +34,7 @@ header {
 /* #region main */
 main {
 
-    .container {   
+    .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -45,11 +47,28 @@ main {
         border-radius: 1.5rem;
 
         ul {
-            margin-bottom: 2rem;
 
             li {
                 list-style: none;
             }
+        }
+    }
+
+    .cont-button {
+        margin: 2rem 0;
+
+        .button {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            padding: 1rem;
+            background-color: var(--accent-colour);
+            border: none;
+            border-radius: .5rem;
+            font-family: "Roboto Mono", monospace;
+            font-weight: 700;
+            font-size: larger;
+            color: var(--font-colour);
         }
     }
 }
