@@ -21,3 +21,5 @@ for (let i = 0; i < 10; i++) {
         ulElement.appendChild(liElement);
     })
 }
+
+// per sezione bonus: appendi il for ad un bottone con add event listener?
