@@ -17,7 +17,7 @@ for (let i = 0; i <= 10; i++) {
         
         // opzioni: crea markup qui o su html?
         let liElement = document.createElement('li');
-        liElement.innerHTML = response.data;
+        liElement.innerHTML = response.data.response;
         ulElement.appendChild(liElement);
     })
 }
